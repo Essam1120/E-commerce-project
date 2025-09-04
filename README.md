@@ -15,13 +15,5 @@ Swift Cart Market is an eCommerce project developed using native JavaScript for 
 - **Contact:** Reach out to us for any complaints, issues, or suggestions. We value your feedback.
 - **Responsive Design:** The project is designed to provide a consistent and enjoyable experience across various devices.
 
-## Project Link
 
-[Swift Cart Market - GitHub Repository](https://github.com/Essam1120/E-commerce-project.git)
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/abdelmonemanwr/Ecommerce-Using-Native-JS.git
