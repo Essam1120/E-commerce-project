@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>E - commerce</title>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/resetStyles.css" />
+		<link rel="icon" type="image/x-icon" href="images/logo.png" />
+		<!-- icon title -->
+		<link rel="stylesheet" href="css/navbar.css" />
+		<!--add navbar css style as a plugin -->
+		<link rel="stylesheet" href="css/sidebar.css" />
+		<!--add sidebar css style as a plugin -->
+		<link rel="stylesheet" href="css/slider.css" />
+		<!--add sidebar css style as a plugin -->
+		<link rel="stylesheet" href="css/content.css" />
+		<!--add content css style as a plugin -->
+		<link rel="stylesheet" href="css/Back2TopBtn.css" />
+		<!--back2top css style as a plugin -->
+		<link rel="stylesheet" href="css/categories.css" />
+		<!-- categories css style as a plugin-->
+		<link rel="stylesheet" href="css/footer.css" />
+		<!--add footer css style as a plugin -->
+		<link rel="stylesheet" href="css/product.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<header>
+			<nav class="navbar">
+				<div class="first-half">
+					<div class="logo_par">
+						<img class="logo" src="images/logo.png" alt="Logo" />
+						<!-- <h1 class="title logo">Swift Cart</h1> -->
+					</div>
+					<ul>
+						<li>
+							<a href="index.html" target="_blank">Home</a>
+							<div class="drop-down-menu">
+								<div>Slider</div>
+								<div>Content</div>
+								<div>Categories</div>
+							</div>
+						</li>
+						<li>
+							<a href="about.html" target="_blank">About</a>
+						</li>
+						<li>
+							<a href="contact.html" target="_blank">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-half">
+					<div class="cart-icon">
+						<div class="cart-icon-counter">0</div>
+						<i class="fad fa-shopping-cart"></i>
+					</div>
+					<div class="login-btn ms-3">
+						<a href="sign.html" class="btn btn-outline-dark">Login</a>
+					  </div>
+					<div class="toggle-sidebar-icon">
+						<i class="fas fa-bars go"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="index.html" target="_blank">Home</a>
+				</li>
+				<li>
+					<a href="about.html" target="_blank">About</a>
+				</li>
+				<li>
+					<a href="contact.html" target="_blank">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- slider -->
+		<div id="home" class="slider-container">
+			<div class="slider">
+				<div class="slide">
+					<img src="images/slider1.avif" alt="Slide 1" />
+				</div>
+				<div class="slide">
+					<img src="images/slider2.avif" alt="Slide 2" />
+				</div>
+				<div class="slide">
+					<img src="images/slider3.jpg" alt="Slide 3" />
+				</div>
+				<div class="slide">
+					<img src="images/slider4.avif" alt="Slide 4" />
+				</div>
+			</div>
+			<div class="prev-btn" onclick="changeSlide(-1)">
+				<i class="fas fa-chevron-left"></i>
+			</div>
+			<div class="next-btn" onclick="changeSlide(1)">
+				<i class="fas fa-chevron-right"></i>
+			</div>
+		</div>
+
+		<!-- content1 -->
+		<section id="about" class="about section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="about-img">
+							<img
+								id="contentImage"
+								class="img-fluid"
+								src="images/slider3.jpg"
+								alt="about image"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+						<div class="about-txt" id="content1">
+							<h2 class="aboutHeading">
+								We Provide Best Quality
+							</h2>
+
+							<p class="aboutDescription">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed ac accumsan mauris. Vivamus
+								suscipit, felis id fermentum cursus, odio turpis
+								dignissim elit, at tristique urna elit a ligula.
+							</p>
+
+							<p class="aboutDescription">
+								Integer auctor fringilla elit, at varius velit
+								pellentesque non. Curabitur tincidunt, purus ac
+								ultricies dignissim, dolor tortor laoreet purus,
+								vel vehicula leo lectus eu libero. Quisque
+								facilisis vulputate sapien vel vulputate.
+							</p>
+							<p id="readmore1">
+								Fusce et malesuada dui. Morbi vehicula, turpis
+								nec euismod ultrices, felis augue ullamcorper
+								odio, non venenatis arcu elit id dolor. Integer
+								eleifend sem a condimentum malesuada.
+							</p>
+							<button id="Btn1" class="btn1 btn-warning mt-3">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- content2 -->
+		<section id="about" class="about section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="about-img">
+							<img
+								id="contentImage"
+								class="img-fluid"
+								src="images/sliderv2.jpg"
+								alt="about image"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+						<div class="about-txt" id="content2">
+							<h2 class="aboutHeading">
+								We Provide Best Service
+							</h2>
+
+							<p class="aboutDescription">
+								Fusce et malesuada dui. Morbi vehicula, turpis
+								nec euismod ultrices, felis augue ullamcorper
+								odio, non venenatis arcu elit id dolor. Integer
+								eleifend sem a condimentum malesuada.
+							</p>
+
+							<p class="aboutDescription">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed ac accumsan mauris. Vivamus
+								suscipit, felis id fermentum cursus, odio turpis
+								dignissim elit, at tristique urna elit a ligula.
+							</p>
+
+							<p id="readmore2">
+								Integer auctor fringilla elit, at varius velit
+								pellentesque non. Curabitur tincidunt, purus ac
+								ultricies dignissim, dolor tortor laoreet purus,
+								vel vehicula leo lectus eu libero.
+							</p>
+
+							<button id="Btn2" class="btn2 btn-warning mt-3">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <!--filter-->
+    <section class="filteration container-fluid rounded-5 mt-5 d-flex">
+		<section
+		  class="filter-list container-fluid rounded rounded-5 fs-1 shadow-lg ps-5"
+		>
+		  <br />
+		  <div class="collapse-filter d-flex align-items-center">
+			<svg
+			  xmlns="http://www.w3.org/2000/svg"
+			  viewBox="0 0 640 640"
+			  width="40px"
+			  height="40px"
+			>
+			  <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+			  <path
+				d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"
+			  />
+			</svg>
+			<h3 class="fw-bold fs-1" style="color: oklch(0.446 0.03 256.802)">
+			  &emsp; COLLAPSE FILTERS
+			</h3>
+		  </div>
+		  <br />
+		  <div class="row m-4">
+			<!-- Categories -->
+			<div class="filter-group mb-4 col-4">
+			  <h1 class="fw-bold fs-1">CATEGORY</h1>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="men's clothing"
+				  id="catMen"
+				/>
+				<label class="form-check-label" for="catMen">Men</label>
+			  </div>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="women's clothing"
+				  id="catWomen"
+				/>
+				<label class="form-check-label" for="catWomen">Women</label>
+			  </div>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="jewelery"
+				  id="catJewelery"
+				/>
+				<label class="form-check-label" for="catJewelery">Jewelery</label>
+			  </div>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="electronics"
+				  id="catElectronics"
+				/>
+				<label class="form-check-label" for="catElectronics"
+				  >Electronics</label
+				>
+			  </div>
+			</div>
+
+			<!-- Sizes -->
+			<div class="filter-group mb-4 col-4 size">
+			  <h1 class="fw-bold fs-1">SIZE</h1>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="s"
+				  id="sizeS"
+				/>
+				<label class="form-check-label" for="sizeS">S</label>
+			  </div>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="m"
+				  id="sizeM"
+				/>
+				<label class="form-check-label" for="sizeM">M</label>
+			  </div>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="l"
+				  id="sizeL"
+				/>
+				<label class="form-check-label" for="sizeL">L</label>
+			  </div>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="xl"
+				  id="sizeXL"
+				/>
+				<label class="form-check-label" for="sizeXL">XL</label>
+			  </div>
+			  <div class="form-check">
+				<input
+				  class="form-check-input"
+				  type="checkbox"
+				  value="xxl"
+				  id="sizeXXL"
+				/>
+				<label class="form-check-label" for="sizeXXL">XXL</label>
+			  </div>
+			</div>
+			<!-- Break line -->
+			<div class="w-100"></div>
+  
+			<!-- Price Range (now directly under Sizes) -->
+			<div class="filter-group mb-4 col-3 mt-5">
+			  <h1 class="fw-bold fs-1">PRICE</h1>
+			  <div class="from-to-price d-flex gap-2">
+				<input
+				  type="number"
+				  class="form-control flex-fill rounded-5 fs-2"
+				  placeholder="$ 0"
+				/>
+				<input
+				  type="number"
+				  class="form-control flex-fill rounded-5 fs-2"
+				  placeholder="$ 160"
+				/>
+			  </div>
+			</div>
+		  </div>
+  
+		  <!--Apply filter-->
+		  <div class="row d-flex justify-content-center">
+			<div class="col-3 text-center apply-filter">
+			  <button class="btn btn-dark rounded-5 px-5 fs-3 w-100">
+				APPLY
+			  </button>
+			</div>
+		  </div>
+		  <br />
+		</section>
+  
+		<!---->
+		<div class="btn flex-grow-0 w-100 d-flex filter-btn">
+		  <div class="rounding rounded-circle border border-3 border-dark p-3">
+			<img src="./images/filter.png" />
+		  </div>
+		  <p class="fs-1 fw-bold filter-text align-self-center">FILTER</p>
+		</div>
+	  </section>
+		<!-- categories -->
+		<section id="categories">
+			<!-- <h1>Categories</h1> -->
+			
+
+			<div id="products-container"></div>
+		</section>
+
+		<!-- back to top button -->
+		<div class="back-to-top">
+			<i class="fal fa-arrow-alt-circle-up up"></i>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-container">
+			  <!-- About -->
+			  <div class="footer-section">
+				<h3>About Us</h3>
+				<p>
+				  Our store offers the best quality products with fast delivery and
+				  top-notch customer support.
+				</p>
+			  </div>
+	  
+			  <!-- Quick Links -->
+			  <div class="footer-section">
+				<h3>Quick Links</h3>
+				<ul>
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Shop</a></li>
+				  <li><a href="#">Deals</a></li>
+				  <li><a href="#">Contact Us</a></li>
+				</ul>
+			  </div>
+	  
+			  <!-- Customer Service -->
+			  <div class="footer-section">
+				<h3>Customer Service</h3>
+				<ul>
+				  <li><a href="#">FAQ</a></li>
+				  <li><a href="#">Shipping Policy</a></li>
+				  <li><a href="#">Returns & Exchanges</a></li>
+				  <li><a href="#">Terms & Conditions</a></li>
+				</ul>
+			  </div>
+	  
+			  <!-- Social Media -->
+			  <div class="footer-section">
+				<h3>Follow Us</h3>
+				<div class="social-icons">
+				  <a href="#"><i class="fab fa-facebook-f"></i></a>
+				  <a href="#"><i class="fab fa-twitter"></i></a>
+				  <a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Bottom -->
+			<div class="footer-bottom">
+			  <p>© 2025  | All Rights Reserved</p>
+			</div>
+		  </footer>
+
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/content.js"></script>
+		<script src="js/Back2TopBtn.js"></script>
+		<script src="js/categories.js"></script>
+		<script src="js/filter.js"></script>
+		
+
+	</body>
+</html>
