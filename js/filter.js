@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterList = document.querySelector(".filter-list");      
   const collapseFilter = document.querySelector(".collapse-filter"); 
 
-  // فتح/قفل بانل الفلتر
   if (filterBtn && filterList) {
     filterBtn.addEventListener("click", () => {
       filterList.classList.toggle("open");
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// ✅ فلترة المنتجات
 document.addEventListener("DOMContentLoaded", () => {
   const categoryInputs = document.querySelectorAll(".filter-group input[type='checkbox'][id^='cat']");
   const sizeInputs = document.querySelectorAll(".filter-group.size input[type='checkbox']");
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   priceInputs.forEach(input => input.addEventListener("input", applyFilters));
 
   function applyFilters() {
-    let filtered = [...products]; // لازم تكون global
+    let filtered = [...products]; 
 
     // Category
     const selectedCategories = Array.from(categoryInputs)
@@ -68,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const maxPrice = parseFloat(priceInputs[1].value) || Infinity;
     filtered = filtered.filter(p => p.price >= minPrice && p.price <= maxPrice);
 
-    // عرض المنتجات
     displayProducts(filtered);
   }
 });
